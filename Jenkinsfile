@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DEPLOY_DIR = "/var/www/html"
+        DEPLOY_DIR = "/var/www/app2"
         REPO_URL = "https://github.com/SachinRao033/Car-Websites.git"
-        BRANCH = "main"
+        BRANCH = "test"
     }
 
     stages {
