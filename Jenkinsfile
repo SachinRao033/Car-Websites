@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
-        stage('Deploy to Apache') {
+        stage('Deploy to nginx') {
             steps {
                 sh '''
                 echo "Deploying website to nginx directory..."
