@@ -30,16 +30,16 @@ pipeline {
         stage('Deploy to Apache') {
             steps {
                 sh '''
-                echo "Deploying website to Apache directory..."
+                echo "Deploying website to nginx directory..."
                 sudo rm -rf ${DEPLOY_DIR}/*
                 sudo cp -r * ${DEPLOY_DIR}/
                 '''
             }
         }
 
-        stage('Restart Apache') {
+        stage('Restart nginx') {
             steps {
-                sh 'sudo systemctl restart apache2'
+                sh 'sudo systemctl restart nginx'
             }
         }
     }
