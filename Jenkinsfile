@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DEPLOY_DIR = "/var/www/html"
+        DEPLOY_DIR = "/usr/share/nginx/html/"
         REPO_URL = "https://github.com/SachinRao033/Car-Websites.git"
         BRANCH = "main"
     }
